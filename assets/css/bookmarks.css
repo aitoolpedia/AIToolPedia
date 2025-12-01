@@ -1,0 +1,46 @@
+/* Bookmarks Page Grid */
+#bookmarkedTools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-items: center;
+  align-items: stretch;
+  max-width: 90vw;
+}
+
+/* pagination setup */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  background-color: white;
+  border: 2px solid #1b1b32;
+  color: #1b1b32;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #1b1b32;
+  color: white;
+}
+
+#page-info {
+  color: white;
+  font-weight: 500;
+}
+/* Pagination Setup End */

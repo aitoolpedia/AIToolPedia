@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Find 500+ AI tools for business, marketing, productivity, design, and automation. Bookmark and explore AI tools with filters and categories.">
+
+        <!-- Open Graph (For LinkedIn, Facebook, etc.) -->
+        <meta property="og:title" content="AIToolPedia — Best AI Tools Directory">
+        <meta property="og:description" content="Explore 500+ AI tools. Filter by category, pricing, and bookmark your favorites.">
+        <meta property="og:image" content="https://YOURDOMAIN/assets/og-image.png">
+        <meta property="og:url" content="https://YOURDOMAIN/">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="AIToolPedia — Best AI Tools Directory">
+        <meta name="twitter:description" content="Discover 500+ AI tools to grow your business. Bookmark your favorites.">
+        <meta name="twitter:image" content="https://YOURDOMAIN/assets/og-image.png">
+
+        <!-- SEO -->
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://YOURDOMAIN/"> <!-- Replace YOURDOMAIN with actual website domain  -->
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "AIToolPedia",
+                "url": "https://yourdomain.com/",
+                "description": "Discover the best AI tools, news, glossary, and resources to upgrade your productivity.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "AIToolPedia",
+                    "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://yourdomain.com/assets/logo.png"
+                    }
+                },
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://yourdomain.com/explore.html?search={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
+
+
+
+        <title>AIToolPedia — Home</title>
+        <!-- Bootstrap bookmark icon -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        
+            <!-- favicon (optional) -->
+        <link rel="icon" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="assets/css/home.css" />
+        <link rel="stylesheet" href="assets/css/navBar.css" />  
+        <link rel="stylesheet" href="assets/css/footer.css" />      
+    </head>
+    <body>
+
+        <!-- Header with Navigation section -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="brand">
+                    <a href="index.html" class="logo">
+                        <img class="primaryLogo" src="assets/images/aitoolpedia_primaryLogo.png" alt="AIToolPedia Logo">
+                        <span class="logo-text">AIToolPedia</span>
+                    </a>
+                </div>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">AI Tools</a>
+                    <a href="aitoolpedia-program.html">Programs</a>
+                    <a href="aitoolpedia-news.html">AI News</a>
+                    <a href="aitoolpedia-glossary.html">AI Glossary</a>
+                    <a href="aitoolpedia-contact.html">Contact</a>
+                </nav>
+                <div class="bookmark-icon">
+                    <a href="bookmarks.html" aria-label="View Bookmarked Tools">
+                        <i class="bi bi-bookmark-fill"></i>
+                    </a>
+                </div>
+                <div class="header-cta">
+                    <a class="btn primary" href="#newsletter-form">500+ AI Tools List</a>
+                </div>
+
+                
+            </div>
+        </header>
+
+
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <p class="eyebrow">Welcome to AIToolPedia</p>
+                <h1>Supercharge Your Mind with AI</h1>
+                <p class="lead">Discover high quality AI tools for professionals, students, and creators — <br>save time, reduce costs, and increase productivity.</p>   
+
+                <!-- Newsletter  -->
+                <div class="hero-newsletter">
+                    <p class="newsletter-text">
+                        📬 Get 500+ AI Tools List directly in your inbox!
+                    </p>
+                    <form id="newsletter-form">   <!-- action="https://api.convertkit.com/v3/forms/8752043/subscribe" method="POST" -->
+                        
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <!-- <input type="hidden" name="api_key" value="8149tPrr7Zd22v4sPP1DDQ"> -->
+                        <button type="submit">GET ACCESS</button>
+                        <p id="form-message"></p>
+                    </form>
+                    <p id="newsletterMessage" class="message"></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURED TOOLS (dynamically loads first 10 tools from data/tools.json) -->
+        <section id="featured" class="featured-section reveal">
+            
+                <h2 class="section-title">--------------------------- Featured AI Tools ---------------------------</h2>
+
+                <div class="featured-grid">
+                    <!-- Tool Card 1 -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/chat.openai.com" alt="ChatGPT logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">ChatGPT</h3>
+                        <p class="tool-desc">Advanced conversational AI by OpenAI for text generation and chat.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Chatbot</a>
+                                <a href="#">Writing</a>
+                            </div>
+                        </div>
+                        <a href="https://chat.openai.com" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+                    <!-- 2. Midjourney -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/midjourney.com" alt="Midjourney logo" class="tool-logo">
+                            <span class="pricing-tag">Paid</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Midjourney</h3>
+                        <p class="tool-desc">Generate stunning, artistic visuals from text prompts using cutting-edge diffusion models.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Image Generation</a>
+                                <a href="#">Design</a>
+                            </div>
+                        </div>
+                        <a href="https://midjourney.com" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 3. Notion AI -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/notion.so" alt="Notion AI logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Notion AI</h3>
+                        <p class="tool-desc">Enhance productivity with built-in writing, brainstorming, and summarization tools inside Notion.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Productivity</a>
+                                <a href="#">Writing</a>
+                            </div>
+                        </div>
+                        <a href="https://notion.so" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 4. Runway ML -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/runwayml.com" alt="Runway ML logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Runway ML</h3>
+                        <p class="tool-desc">AI-powered video editing and content creation for creators and professionals.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Video</a>
+                                <a href="#">Content Creation</a>
+                            </div>
+                        </div>
+                        <a href="https://runwayml.com" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 5. Jasper AI -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/jasper.ai" alt="Jasper AI logo" class="tool-logo">
+                            <span class="pricing-tag">Paid</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Jasper AI</h3>
+                        <p class="tool-desc">An AI copywriting assistant that helps marketers and teams write better, faster content.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Writing</a>
+                                <a href="#">Marketing</a>
+                            </div>
+                        </div>
+                        <a href="https://jasper.ai" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 6. Synthesia -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/synthesia.io" alt="Synthesia logo" class="tool-logo">
+                            <span class="pricing-tag">Paid</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Synthesia</h3>
+                        <p class="tool-desc">Create AI-generated videos with virtual avatars — no camera, no actors required.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Video</a>
+                                <a href="#">Avatars</a>
+                            </div>
+                        </div>
+                        <a href="https://synthesia.io" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 7. Copy.ai -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/copy.ai" alt="Copy.ai logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Copy.ai</h3>
+                        <p class="tool-desc">Generate marketing copy, blog posts, and social media content instantly with AI.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Marketing</a>
+                                <a href="#">Writing</a>
+                            </div>
+                        </div>
+                        <a href="https://copy.ai" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 8. Durable -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/durable.co" alt="Durable logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Durable</h3>
+                        <p class="tool-desc">AI website builder that creates a complete business site in seconds.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Website Builder</a>
+                                <a href="#">Productivity</a>
+                            </div>
+                        </div>
+                        <a href="https://durable.co" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 9. Pictory -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/pictory.ai" alt="Pictory logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">Pictory</h3>
+                        <p class="tool-desc">Turn your scripts or articles into engaging videos using AI-powered tools.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Video</a>
+                                <a href="#">Content Creation</a>
+                            </div>
+                        </div>
+                        <a href="https://pictory.ai" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+                    <!-- 10. ElevenLabs -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="https://logo.clearbit.com/elevenlabs.io" alt="ElevenLabs logo" class="tool-logo">
+                            <span class="pricing-tag">Freemium</span>
+                            <button class="bookmark-btn" aria-label="Bookmark Tool">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                        </div>
+                        <h3 class="tool-name">ElevenLabs</h3>
+                        <p class="tool-desc">Realistic AI voice synthesis for narration, dubbing, and creative audio projects.</p>
+                        <div class="tool-meta">
+                            <div class="categories">
+                                <a href="#">Voice</a>
+                                <a href="#">Audio</a>
+                            </div>
+                        </div>
+                        <a href="https://elevenlabs.io" target="_blank" class="visit-btn">Visit</a>
+                    </div>
+
+
+                    
+                </div>
+
+                <!-- CTA bar: wide call-to-action -->
+                <div class="cta-bar">
+                    <a href="explore.html" class="cta-link">See Full AI Tools List</a>
+                </div>
+            
+        </section>
+
+        <!-- TRENDING CATEGORIES -->
+        <section class="section alt">
+            <div class="container">
+                <h2 class="section-title">------------------ Trending Categories ------------------</h2>
+                <div class="category-grid">
+                    <!-- copy the visual style from the image; replace icons/text as needed -->
+                    <div class="cat-card trend-card" data-category="Video Generation"><span class="cat-icon">🎥</span><span>Video Generator</span></div>
+                    <div class="cat-card trend-card" data-category="AI LOGO Generator"><span class="cat-icon">🖼️</span><span>AI Logo Generator</span></div>
+                    <div class="cat-card trend-card" data-category="AI Marketing"><span class="cat-icon">👨🏻‍💻</span><span>AI Marketing</span></div>
+                    <div class="cat-card trend-card" data-category="AI Automation"><span class="cat-icon">🤖</span><span>AI Automation</span></div>
+                    <div class="cat-card trend-card" data-category="Text To Image"><span class="cat-icon">🖼️</span><span>Image Generators</span></div>
+                    <div class="cat-card trend-card" data-category="AI Assitant"><span class="cat-icon">🤖</span><span>AI Assitant</span></div>
+                    <div class="cat-card trend-card" data-category="Finance"><span class="cat-icon">📈</span><span>Finance</span></div>
+                    <div class="cat-card trend-card" data-category="Students AI"><span class="cat-icon">👨🏻‍🎓</span><span>AI Tools for Students</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLORE MORE POTENTIAL WITH AI -->
+        <!-- <section class="section">
+            <div class="container">
+                <h2 class="section-title">------------------ Explore More Potential with AI ------------------</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>HubSpot AI Tools</h3>
+                        <p>Discover secure tools for business and enterprise.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📰</div>
+                        <h3>AI News</h3>
+                        <p>AI news in real time, at a glance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">➕</div>
+                        <h3>GPTs List</h3>
+                        <p>Collection of the best custom GPTs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">▶️</div>
+                        <h3>YouTube AI</h3>
+                        <p>Top YouTube channels covering AI.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Top 100 AI (beta)</h3>
+                        <p>Most popular & trending AI tools.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎬</div>
+                        <h3>AI Video Tutorials</h3>
+                        <p>Learn how to master the best AI tools.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Blog & Tips</h3>
+                        <p>Tutorials, tips, and AI trends.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3>Mini Free Apps</h3>
+                        <p>Explore free mini apps for quick results.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo light">AIToolPedia</a>
+                    <p>AI Tool for everyone</p>
+                </div>
+            </div>
+
+            <div class="footer-cols">
+                <div class="col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Tutorials, tips and blog</a></li>
+                    <li><a href="aitoolpedia-glossary.html">AI Glossary</a></li>
+                    <!-- <li><a href="#">Explore AI Jobs</a></li> -->
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+                </div>
+
+                <div class="col">
+                <h4>Useful Tools</h4>
+                <ul>
+                    <!-- <li><a href="explore.html">Best AI Youtube Channels</a></li> -->
+                    <li><a href="explore.html">Top 100 AI</a></li>
+                    <!-- <li><a href="explore.html">GPTs List</a></li> -->
+                    <!-- <li><a href="explore.html">HubSpot AI Tools</a></li> -->
+                    <li><a href="explore.html">Best AI Agents</a></li>
+                </ul>
+                </div>
+
+                <div class="col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="aitoolpedia-contact.html">Submit an AI Tool</a></li>
+                    <li><a href="aitoolpedia-contact.html">Advertise</a></li>
+                    <!-- <li><a href="#">Update your tool</a></li>
+                    <li><a href="#">Feature your tool</a></li> -->
+                    <li><a href="aitoolpedia-about.html">About Us</a></li>
+                    <li><a href="aitoolpedia-contact.html">Contact Us</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+            <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">© 2025 AIToolPedia. All rights reserved.</div>
+                <div class="socials"><i class="bi bi-instagram"></i>       <i class="bi bi-youtube"></i>        <i class="bi bi-twitter-x"></i></div>
+            </div>
+            </div>
+        </footer>
+
+        <!-- Home JS: loads featured tools -->
+        <script src="js/home.js"></script>
+        <script src="js/navBar.js"></script>
+        <script src="js/bookmark-handler.js"></script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+/* home.css - AIBizMind homepage styling (responsive) */
+:root {
+  --bg: #1b1b32;
+  --muted: #94a3b8;
+  --accent: #7c5cff;
+  --card-bg: #ffffff;
+  --glass: rgba(255, 255, 255, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #e6eef8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+}
+/* === Layout === */
+.news-page-container {
+  display: grid;
+  grid-template-columns: 1fr 330px; /* Article + Sidebar */
+  gap: 30px;
+  padding: 40px 7%;
+  margin-top: 90px;
+}
+
+/* Article Area */
+.news-banner {
+  width: 100%;
+  border-radius: 12px;
+  max-height: 380px;
+  object-fit: cover;
+}
+
+.news-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.news-date {
+  color: #444;
+  margin: 6px 0 18px;
+}
+
+.news-content {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Sidebar */
+.news-sidebar {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* Vertical Ad Box */
+.ad-box-vertical {
+  background: #e8e8e8;
+  border-radius: 12px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+  font-size: 18px;
+}
+
+/* Sponsored Tool */
+.sponsored-tool {
+  background: #1b1b32;
+  color: white;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.tool-card {
+  background: white;
+  padding: 14px;
+  color: black;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.tool-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.sponsored-btn {
+  display: block;
+  margin-top: 12px;
+  background: #1b1b32;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Latest News */
+.latest-news h3 {
+  margin-bottom: 10px;
+}
+
+.latest-news ul {
+  list-style: none;
+  padding: 0;
+}
+
+.latest-news li {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.latest-news li:hover {
+  color: #1b1b32;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .news-page-container {
+    grid-template-columns: 1fr;
+  }
+  .news-sidebar {
+    position: relative;
+  }
+}

@@ -1,0 +1,83 @@
+body {
+  background: #1b1b32;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding-top: 80px; /* space for fixed header */
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  min-height: 90vh;
+}
+
+.contact-container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #fff, #d6c7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #d6d6d6;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+button.btn.primary {
+  background: #4f46e5;
+  border: none;
+  color: #fff;
+  padding: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.btn.primary:hover {
+  background: #6d5ff3;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #b8b8b8;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+}

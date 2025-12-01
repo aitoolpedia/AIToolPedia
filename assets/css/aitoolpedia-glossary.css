@@ -1,0 +1,56 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1b1b32;
+  color: #e4e4e4;
+  margin: 0;
+  padding: 0;
+}
+
+.glossary-container {
+  padding: 0 1rem;
+}
+
+.glossary-list {
+  display: block;
+  width: 90%;
+  margin: 0 1rem;
+}
+
+.term {
+  text-align: left !important;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.term:hover {
+  transform: translateY(-2px);
+  background: #29295a;
+}
+
+.term h2 {
+  text-align: left !important;
+  font-size: 1.2rem;
+  color: #5ab2ff;
+  margin-bottom: 0.3rem;
+}
+
+.term p {
+  font-size: 0.95rem;
+  color: #d8d8e5;
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .glossary-container {
+    margin-top: 80px;
+  }
+
+  .term h2 {
+    font-size: 1.05rem;
+  }
+
+  .term p {
+    font-size: 0.9rem;
+  }
+}

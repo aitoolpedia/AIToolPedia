@@ -1,0 +1,225 @@
+:root {
+  --bg: #1b1b32;
+  --muted: #94a3b8;
+  --accent: #7c5cff;
+  --card-bg: #ffffff;
+  --glass: rgba(255, 255, 255, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #e6eef8;
+  line-height: 1.45;
+}
+
+/* ===== HEADER ===== */
+
+
+/* ===== FILTER BAR ===== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 8rem 0 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.filters input,
+.filters select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  min-width: 180px;
+  font-size: 0.95rem;
+}
+
+.reset-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.reset-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ===== GRID ===== */
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+  justify-content: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/* ===== CARD ===== */
+.tool-card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.tool-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tool-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.pricing-tag {
+  background: #6366f1;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.bookmark-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.bookmark-btn.active {
+  color: #facc15;
+}
+
+.tool-name {
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin: 0.75rem 0 0.3rem;
+}
+
+.tool-desc {
+  font-size: 0.95rem;
+  color: #4b5563;
+  min-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.categories a {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  margin: 0.1rem 0.25rem;
+  text-decoration: none;
+}
+.categories a:hover {
+  background: #007bff;
+  color: #fff;
+}
+.visit-btn {
+  display: inline-block;
+  background: #2A3EFF;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6rem 0;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-top: auto;
+  transition: background-color 0.2s ease;
+}
+
+.visit-btn:hover {
+  background-color: #151524;
+  color: whitesmoke;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.page-btn {
+  display: inline-block;
+  margin: 0 0.25rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background-color: #e5e7eb;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background-color: #6366f1;
+  color: white;
+}
+
+.page-btn.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* ===== MOBILE FILTER LAYOUT ===== */
+@media (max-width: 600px) {
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns layout */
+    gap: 0.8rem;
+    padding: 6rem 1rem 1.5rem;
+  }
+
+  .filters input,
+  .filters select,
+  .reset-btn {
+    width: 100%;          /* full width inside each grid cell */
+    min-width: unset;     /* remove desktop min-width forcing overflow */
+  }
+
+  /* Make reset button visually consistent */
+  .reset-btn {
+    padding: 0.6rem 0;
+  }
+}
+

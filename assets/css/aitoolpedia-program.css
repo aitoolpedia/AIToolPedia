@@ -1,0 +1,68 @@
+body {
+                background: #1b1b32;
+                color: #fff;
+                font-family: "Inter", sans-serif;
+            }
+
+            /* ---------- Hero Section ---------- */
+            .program-hero {
+                text-align: center;
+                padding: 6rem 1rem;
+                background: linear-gradient(135deg, #1b1b32, #242447);
+            }
+
+            .program-hero h1 {
+                font-size: 3rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+            }
+
+            .program-hero p {
+                font-size: 1.2rem;
+                opacity: .9;
+            }
+
+            /* ---------- Program Cards ---------- */
+            .program-container {
+                max-width: 1200px;
+                margin: auto;
+                padding: 4rem 1rem;
+            }
+
+            .program-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+
+            .program-card {
+                background: #262646;
+                padding: 2rem;
+                border-radius: 12px;
+                border: 1px solid #36366a;
+                text-align: left;
+                transition: 0.3s ease;
+            }
+
+            .program-card:hover {
+                transform: translateY(-6px);
+                border-color: #6c63ff;
+            }
+
+            .program-card h3 {
+                margin-bottom: .7rem;
+                font-size: 1.4rem;
+            }
+
+            .program-card p {
+                font-size: 1rem;
+                opacity: .85;
+            }
+
+            .coming-soon {
+                padding: 3rem;
+                text-align: center;
+                font-size: 1.8rem;
+                margin-top: 2rem;
+                opacity: .8;
+            }

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "news-001",
+    "title": "OpenAI Releases GPT-5 — A Massive Leap",
+    "date": "2025-11-06",
+    "image": "/assets/news-images/gpt5.png",
+    "summary": "OpenAI announces GPT-5 with breakthrough reasoning and memory improvements.",
+    "content": "<p>GPT-5 introduces improved reasoning, long-term memory, and multimodal capabilities...</p>",
+    "showInSlider": true
+  },
+  {
+    "id": "news-002",
+    "title": "Apple Introduces AI-Powered VisionOS Update",
+    "date": "2025-11-03",
+    "image": "/assets/news-images/visionos.png",
+    "summary": "Apple's new VisionOS update adds direct AI integration into daily workflow.",
+    "content": "<p>During the event Apple showcased...</p>",
+    "showInSlider": true
+  },
+  {
+    "id": "news-003",
+    "title": "Google Gemini Takes Aim at ChatGPT",
+    "date": "2025-11-01",
+    "image": "/assets/news-images/gemini.png",
+    "summary": "Google upgrades Gemini and enters direct competition with ChatGPT.",
+    "content": "<p>Gemini is now capable of...</p>",
+    "showInSlider": true
+  },
+  {
+    "id": "news-004",
+    "title": "OpenAI launches GPT-5 with multimodal autonomous agents",
+    "image": "assets/news/gpt5.jpg",
+    "date": "2025-11-06",
+    "summary": "Google upgrades Gemini and enters direct competition with ChatGPT.",
+    "shortDesc": "OpenAI releases GPT-5 with autonomous agent abilities and ultra-reasoning.",
+    "showInSlider": true
+  },
+  {
+    "id": "news-005",
+    "title": "Google releases Gemini Ultra 3",
+    "image": "assets/news/gemini.jpg",
+    "date": "2025-11-05",
+    "summary": "Google upgrades Gemini and enters direct competition with ChatGPT.",
+    "shortDesc": "Gemini Ultra 3 beats GPT-5 on reasoning benchmarks.",
+    "showInSlider": false
+  }
+
+]

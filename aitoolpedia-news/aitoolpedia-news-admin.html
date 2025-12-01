@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AIBizMind News Admin – Add News</title>
+        <style>
+            textarea,input{width:100%;padding:12px;margin-bottom:12px;border-radius:10px;}
+            button{padding:12px;background:#1b1b32;color:white;border:none;border-radius:10px;width:100%;cursor:pointer;}
+            #output{white-space:pre-wrap;background:#f4f4f4;padding:14px}
+        </style>
+    </head>
+    <body>
+        <h2>Add News</h2>
+        <input id="title" placeholder="News Title">
+        <input id="image" placeholder="Image URL">
+        <textarea id="summary" placeholder="Short summary"></textarea>
+        <textarea id="content" placeholder="Full article (HTML allowed)"></textarea>
+
+        <button onclick="generate()">Generate JSON</button>
+        <div id="output"></div>
+
+        <script>
+        function generate(){
+        const news = {
+            id: Date.now(),
+            title: title.value,
+            summary: summary.value,
+            date: new Date().toISOString().split('T')[0],
+            image: image.value,
+            content: content.value
+        };
+        output.textContent = JSON.stringify(news, null, 2);
+        }
+        </script>
+    </body>
+</html>
