@@ -16,16 +16,32 @@
 
   <url>
     <loc>https://aitoolpedia.netlify.app/bookmarks</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aitoolpedia.netlify.app/program</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://aitoolpedia.netlify.app/contact</loc>
-    <priority>0.7</priority>
+    <loc>https://aitoolpedia.netlify.app/glossary</loc>
+    <priority>0.6</priority>
   </url>
+
+  <url>
+    <loc>https://aitoolpedia.netlify.app/contact</loc>
+    <priority>0.5</priority>
+  </url>
+
   <url>
     <loc>https://aitoolpedia.netlify.app/about</loc>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://aitoolpedia.netlify.app/program</loc>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
