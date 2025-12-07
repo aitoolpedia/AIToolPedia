@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-                <!-- ========== BASIC META TAGS ========== -->
+        <!-- ========== BASIC META TAGS ========== -->
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="AI tools, artificial intelligence, productivity, business tools, AI startups, automation, side hustle, AIBizMind">
+        <meta name="keywords" content="AI tools, artificial intelligence tools, AI directory, generative AI, AI for business, productivity AI, marketing AI, AIToolPedia">
         <meta name="author" content="AIToolPedia">
 
-        <meta name="description" content="Find 500+ AI tools for business, marketing, productivity, design, and automation. Bookmark and explore AI tools with filters and categories.">
+        <!-- ========== PRIMARY META DESCRIPTION (only 1 allowed) ========== -->
+        <meta name="description" content="Find 500+ AI tools for business, marketing, productivity, design, writing, and automation. Explore AI tools with filters, categories, and bookmarking. Updated daily.">
 
-        <!-- SEO -->
+        <!-- ========== ROBOTS ========== -->
         <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://YOURDOMAIN/"> <!-- Replace YOURDOMAIN with actual website domain  -->
 
-                <!-- ========== TITLE ========== -->
-        <title>AIToolPedia | Explore the Best AI Tools for Everyone</title>
+        <!-- ========== TITLE ========== -->
+        <title>AIToolPedia | Explore 500+ AI Tools by Category & Filters</title>
 
-                <!-- ========== OPEN GRAPH (FACEBOOK / LINKEDIN) ========== -->
-        <meta property="og:title" content="AIBizMind – Explore 100+ AI Tools for Productivity and Growth">
-        <meta property="og:description" content="Discover AI tools for business, students, and creators. Save time, money, and increase productivity with curated tools.">
-        <meta property="og:image" content="assets/images/og-preview.jpg">     <!-- Replace og:url → your actual site URL once hosted. -->
-        <meta property="og:url" content="https://AIToolPedia.com/explore.html"> <!-- Replace og:image → 1200×630px preview image -->
+        <!-- ========== CANONICAL URL ========== -->
+        <link rel="canonical" href="https://aitoolpedia.netlify.app/explore">
+
+        <!-- ========== OPEN GRAPH (FACEBOOK / LINKEDIN) ========== -->
+        <meta property="og:title" content="Explore 500+ AI Tools — AIToolPedia">
+        <meta property="og:description" content="Find the best AI tools for writing, marketing, coding, design, and automation. Updated directory with filters & categories.">
+        <meta property="og:url" content="https://aitoolpedia.netlify.app/explore">
         <meta property="og:type" content="website">
+        <meta property="og:site_name" content="AIToolPedia">
+        <meta property="og:image" content="https://aitoolpedia.netlify.app/assets/images/og-banner.png">
 
-                <!-- ========== TWITTER CARDS ========== -->
+        <!-- ========== TWITTER CARD ========== -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="AIToolPedia – Explore AI Tools that Save Time & Money">
-        <meta name="twitter:description" content="Curated AI tools for productivity, business, and creativity.">
-        <meta name="twitter:image" content="assets/images/og-preview.jpg">    <!-- Replace twitter:image → 1200×630px preview image -->
+        <meta name="twitter:title" content="Explore 500+ AI Tools — AIToolPedia">
+        <meta name="twitter:description" content="Fastest way to discover AI tools. Filter by categories & bookmark instantly.">
+        <meta name="twitter:image" content="https://aitoolpedia.netlify.app/assets/images/og-banner.png">
 
+        <!-- ========== SCHEMA FOR EXPLORE PAGE ========== -->
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "CollectionPage",
-                "name": "AI Tools Directory",
-                "description": "Explore AI tools categorized by productivity, writing, chatbot, automation, business and more.",
-                "url": "https://yourdomain.com/explore.html",
-                "hasPart": {
-                    "@type": "ItemList",
-                    "itemListOrder": "Ascending",
-                    "numberOfItems": 502
-                }
-            }
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "AI Tools Directory",
+            "description": "Browse 500+ AI tools with filters for category, pricing, and use-case.",
+            "url": "https://aitoolpedia.netlify.app/explore"
+        }
         </script>
 
-        <!-- Bootstrap bookmark icon -->
+        <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-                <!-- ========== FAVICON (optional) ========== -->
+        <!-- Favicon -->
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-                <!-- Link CSS -->
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/navBar.css" /> 
-        <link rel="stylesheet" href="assets/css/footer.css" />  
+        <link rel="stylesheet" href="assets/css/navBar.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
     </head>
 
     <body>
@@ -66,22 +67,22 @@
                     <span class="bar"></span>
                 </button>
                 <div class="brand">
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <img class="primaryLogo" src="assets/images/aitoolpedia_primaryLogo.png" alt="AIToolPedia Logo">
                         <span class="logo-text">AIToolPedia</span>
                     </a>
                 </div>
 
                 <nav class="main-nav" aria-label="Main navigation">
-                    <a href="index.html">Home</a>
-                    <a href="explore.html">AI Tools</a>
-                    <a href="aitoolpedia-program.html">Programs</a>
-                    <!-- <a href="aitoolpedia-news.html">AI News</a> -->
-                    <a href="aitoolpedia-glossary.html">AI Glossary</a>
-                    <a href="aitoolpedia-contact.html">Contact</a>
+                    <a href="/">Home</a>
+                    <a href="/explore">AI Tools</a>
+                    <a href="/program">Programs</a>
+                    <!-- <a href="/news">AI News</a> -->
+                    <a href="/glossary">AI Glossary</a>
+                    <a href="/contact">Contact</a>
                 </nav>
                 <div class="bookmark-icon">
-                    <a href="bookmarks.html" aria-label="View Bookmarked Tools">
+                    <a href="/bookmarks" aria-label="View Bookmarked Tools">
                         <i class="bi bi-bookmark-fill"></i>
                     </a>
                 </div>
@@ -128,7 +129,7 @@
             <div class="container footer-inner">
             <div class="footer-left">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo light">AIToolPedia</a>
+                    <a href="/" class="logo light">AIToolPedia</a>
                     <p>AI Tool for everyone</p>
                 </div>
             </div>
@@ -137,10 +138,10 @@
                 <div class="col">
                 <h4>Resources</h4>
                 <ul>
-                    <li><a href="#">Tutorials, tips and blog</a></li>
-                    <li><a href="aitoolpedia-glossary.html">AI Glossary</a></li>
+                    <li><a href="/program">Tutorials, tips and blog</a></li>
+                    <li><a href="/glossary">AI Glossary</a></li>
                     <!-- <li><a href="#">Explore AI Jobs</a></li> -->
-                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="/">Newsletter</a></li>
                 </ul>
                 </div>
 
@@ -148,22 +149,22 @@
                 <h4>Useful Tools</h4>
                 <ul>
                     <!-- <li><a href="explore.html">Best AI Youtube Channels</a></li> -->
-                    <li><a href="explore.html">Top 100 AI</a></li>
+                    <li><a href="/explore">Top 100 AI</a></li>
                     <!-- <li><a href="explore.html">GPTs List</a></li> -->
                     <!-- <li><a href="explore.html">HubSpot AI Tools</a></li> -->
-                    <li><a href="explore.html">Best AI Agents</a></li>
+                    <li><a href="/explore">Best AI Agents</a></li>
                 </ul>
                 </div>
 
                 <div class="col">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="aitoolpedia-contact.html">Submit an AI Tool</a></li>
-                    <li><a href="aitoolpedia-contact.html">Advertise</a></li>
+                    <li><a href="/contact">Submit an AI Tool</a></li>
+                    <li><a href="/contact">Advertise</a></li>
                     <!-- <li><a href="#">Update your tool</a></li>
                     <li><a href="#">Feature your tool</a></li> -->
-                    <li><a href="aitoolpedia-about.html">About Us</a></li>
-                    <li><a href="aitoolpedia-contact.html">Contact Us</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
                 </div>
             </div>
@@ -177,9 +178,102 @@
             </div>
         </footer>
 
+        <!-- JavaScript files -->
+
         <script src="js/script.js"></script>
         <script src="js/navBar.js"></script>
         <script src="js/bookmark-handler.js"></script>
+
+    
+        <!-- Combined Schema for Categories + Tools -->
+        <script type="application/ld+json" id="categories-schema">
+            {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "AI Tool Categories",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Writing Tools" },
+                { "@type": "ListItem", "position": 2, "name": "Image Generation Tools" },
+                { "@type": "ListItem", "position": 3, "name": "Marketing Tools" },
+                { "@type": "ListItem", "position": 4, "name": "Coding Tools" },
+                { "@type": "ListItem", "position": 5, "name": "Automation Tools" }
+            ]
+            }
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                const tools = [];
+
+                document.querySelectorAll('.tool-card').forEach((card, index) => {
+                    const name = card.querySelector('.tool-name')?.innerText?.trim() || "";
+                    const desc = card.querySelector('.tool-description')?.innerText?.trim() || "";
+
+                    tools.push({
+                        "@type": "ListItem",
+                        "position": index + 1,
+                        "name": name,
+                        "url": "https://aitoolpedia.netlify.app/explore#tool-" + (index + 1),
+                        "description": desc
+                    });
+                });
+
+                const toolSchema = {
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    "name": "AI Tools List",
+                    "itemListElement": tools
+                };
+
+                const script = document.createElement("script");
+                script.type = "application/ld+json";
+                script.textContent = JSON.stringify(toolSchema);
+                document.head.appendChild(script);
+            });
+        </script>
+
+        <script>
+            async function generateToolsSchema() {
+                try {
+                    const response = await fetch("/js/tools.json");
+                    const tools = await response.json();
+
+                    const schemaItems = tools.map((tool) => ({
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "name": tool.Name,
+                        "applicationCategory": tool.Category || "AI Tool",
+                        "description": tool.Description || "",
+                        "operatingSystem": "Web Browser",
+                        "url": tool.Link || "",
+                        "image": tool.LOGO || "",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": tool.Pricing === "Freemium" ? "0" : tool.Pricing,
+                            "priceCurrency": "USD"
+                        },
+                        "keywords": tool.Tags ? tool.Tags.replace(/#/g, "").split(/(?=[A-Z])/).join(", ") : ""
+                    }));
+
+                    const schemaTag = document.createElement("script");
+                    schemaTag.type = "application/ld+json";
+                    schemaTag.textContent = JSON.stringify(schemaItems, null, 2);
+
+                    document.head.appendChild(schemaTag);
+
+                } catch (err) {
+                    console.error("Schema generation failed:", err);
+                }
+            }
+
+            generateToolsSchema();
+        </script>
+
+
+        
+
+
     </body>
 </html>
 
