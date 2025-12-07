@@ -3,33 +3,45 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AIToolPedia - About</title>
 
-        <meta name="description" content="Find 500+ AI tools for business, marketing, productivity, design, and automation. Bookmark and explore AI tools with filters and categories.">
+        <title>AIToolPedia — Our Mission & Why We Built It</title>
 
-        <!-- Open Graph (For LinkedIn, Facebook, etc.) -->
-        <meta property="og:title" content="AIToolPedia — Best AI Tools Directory">
-        <meta property="og:description" content="Explore 500+ AI tools. Filter by category, pricing, and bookmark your favorites.">
-        <meta property="og:image" content="https://YOURDOMAIN/assets/og-image.png">
-        <meta property="og:url" content="https://YOURDOMAIN/">
+        <!-- PRIMARY META DESCRIPTION -->
+        <meta name="description" content="Learn about AIToolPedia — a platform created to help creators, students, and entrepreneurs explore 500+ AI tools easily. No login required. Bookmark freely.">
 
-        <!-- Twitter Card -->
+        <!-- CANONICAL URL -->
+        <link rel="canonical" href="https://aitoolpedia.netlify.app/about" />
+
+        <!-- OPEN GRAPH -->
+        <meta property="og:title" content="About AIToolPedia — Our Purpose & Mission">
+        <meta property="og:description" content="AIToolPedia helps you explore 500+ AI tools easily. Learn why we built it and what makes it different.">
+        <meta property="og:image" content="https://aitoolpedia.netlify.app/assets/images/og-banner.png">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://aitoolpedia.netlify.app/about">
+
+        <!-- TWITTER CARD -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="AIToolPedia — Best AI Tools Directory">
-        <meta name="twitter:description" content="Discover 500+ AI tools to grow your business. Bookmark your favorites.">
-        <meta name="twitter:image" content="https://YOURDOMAIN/assets/og-image.png">
+        <meta name="twitter:title" content="About AIToolPedia — Our Purpose & Mission">
+        <meta name="twitter:description" content="Discover why AIToolPedia exists, who it is for, and what makes it special.">
+        <meta name="twitter:image" content="https://aitoolpedia.netlify.app/assets/images/og-banner.png">
 
-        <!-- SEO -->
+        <!-- INDEXING -->
         <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://YOURDOMAIN/"> <!-- Replace YOURDOMAIN with actual website domain  -->
 
+        <!-- ABOUT PAGE SCHEMA (Correct one) -->
         <script type="application/ld+json">
             {
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "About AIToolPedia",
-            "url": "https://yourdomain.com/aitoolpedia-about",
-            "description": "Learn about us and our Mission."
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "About AIToolPedia",
+                "url": "https://aitoolpedia.netlify.app/about",
+                "description": "Learn about AIToolPedia, our mission, and what makes us different.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "AIToolPedia",
+                    "url": "https://aitoolpedia.netlify.app",
+                    "logo": "https://aitoolpedia.netlify.app/assets/images/aitoolpedia_primaryLogo.png"
+                }
             }
         </script>
             <!-- Bootstrap bookmark icon -->
@@ -115,7 +127,6 @@
 
     <body>
 
-        <!-- Navbar -->
         <!-- Header with Navigation section -->
         <header class="site-header">
             <div class="container header-inner">
@@ -140,7 +151,7 @@
                     <a href="/contact">Contact</a>
                 </nav>
                 <div class="bookmark-icon">
-                    <a href="bookmarks.html" aria-label="View Bookmarked Tools">
+                    <a href="/bookmarks" aria-label="View Bookmarked Tools">
                         <i class="bi bi-bookmark-fill"></i>
                     </a>
                 </div>

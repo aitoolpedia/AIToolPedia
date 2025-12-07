@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Find 500+ AI tools for business, marketing, productivity, design, and automation. Bookmark and explore AI tools with filters and categories.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Open Graph (For LinkedIn, Facebook, etc.) -->
-        <meta property="og:title" content="AIToolPedia — Best AI Tools Directory">
-        <meta property="og:description" content="Explore 500+ AI tools. Filter by category, pricing, and bookmark your favorites.">
-        <meta property="og:image" content="https://YOURDOMAIN/assets/og-image.png">
-        <meta property="og:url" content="https://YOURDOMAIN/">
+        <!-- Basic SEO -->
+        <meta name="keywords" content="AI tools, bookmarks, saved tools, artificial intelligence tools, AIToolPedia">
+        <meta name="author" content="AIToolPedia">
+        <meta name="description" content="View all AI tools you have bookmarked. Save, manage, and explore your favorite AI tools.">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="AIToolPedia — Best AI Tools Directory">
-        <meta name="twitter:description" content="Discover 500+ AI tools to grow your business. Bookmark your favorites.">
-        <meta name="twitter:image" content="https://YOURDOMAIN/assets/og-image.png">
-
-        <!-- SEO -->
         <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://YOURDOMAIN/"> <!-- Replace YOURDOMAIN with actual website domain  -->
 
+        <!-- Canonical -->
+        <link rel="canonical" href="https://aitoolpedia.netlify.app/bookmarks">
+
+        <!-- OPEN GRAPH -->
+        <meta property="og:title" content="Your Bookmarked AI Tools – AIToolPedia">
+        <meta property="og:description" content="See the AI tools you saved. Manage bookmarks easily and discover new tools.">
+        <meta property="og:image" content="assets/images/og-preview.jpg">
+        <meta property="og:url" content="https://aitoolpedia.netlify.app/bookmarks">
+        <meta property="og:type" content="website">
+
+        <!-- TWITTER -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Your Bookmarked AI Tools – AIToolPedia">
+        <meta name="twitter:description" content="Access all your saved AI tools in one place.">
+        <meta name="twitter:image" content="assets/images/og-preview.jpg">
+
+        <!-- Schema.org: Bookmark Page -->
         <script type="application/ld+json">
             {
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Bookmarks — Saved AI Tools",
-            "url": "https://yourdomain.com/bookmarks",
-            "description": "View and manage your bookmarked AI tools."
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": "Bookmarked AI Tools",
+                "url": "https://aitoolpedia.netlify.app/bookmarks",
+                "description": "A collection of AI tools bookmarked by the user."
             }
         </script>
 
-        
         <title>AIToolPedia - My Bookmarked Tools</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="assets/css/home.css" />
@@ -50,22 +56,22 @@
                         <span class="bar"></span>
                     </button>
                     <div class="brand">
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             <img class="primaryLogo" src="assets/images/aitoolpedia_primaryLogo.png" alt="AIToolPedia Logo">
                             <span class="logo-text">AIToolPedia</span>
                         </a>
                     </div>
 
                     <nav class="main-nav" aria-label="Main navigation">
-                        <a href="index.html">Home</a>
-                        <a href="explore.html">AI Tools</a>
-                        <a href="aitoolpedia-program.html">Programs</a>
-                        <!-- <a href="aitoolpedia-news.html">AI News</a> -->
-                        <a href="aitoolpedia-glossary.html">AI Glossary</a>
-                        <a href="aitoolpedia-contact.html">Contact</a>
+                        <a href="/">Home</a>
+                        <a href="/explore">AI Tools</a>
+                        <a href="/program">Programs</a>
+                        <!-- <a href="/news">AI News</a> -->
+                        <a href="/glossary">AI Glossary</a>
+                        <a href="/contact">Contact</a>
                     </nav>
                     <div class="bookmark-icon">
-                        <a href="bookmarks.html" aria-label="View Bookmarked Tools">
+                        <a href="/bookmarks" aria-label="View Bookmarked Tools">
                             <i class="bi bi-bookmark-fill"></i>
                         </a>
                     </div>
